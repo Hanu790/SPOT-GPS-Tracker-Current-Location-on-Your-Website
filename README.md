@@ -1,9 +1,9 @@
 
-features
+features:
 --------
 spotparse.py does the following:
  * saves current latitude,longitude to a file
- * saves all known locations returned from the SPOT API as JSON
+ * saves all known locations and returned from the SPOT API as JSON
  * optionally, keeps adding to the file, saving your tracks for an entire trip (until you move the JSON file)
  * generates a map with all coordinates in the JSON cache file plotted, and a line drawn between them (requires pygmaps python module)
  * same as above, but as XML as well
@@ -13,12 +13,12 @@ spotparse.py does the following:
 Usage: spotparse.py [options]
 
 Options:
-  -h, --help            show this help message and exit
-  -d, --debug           print debug messages
+  -h, --help              show this help message and exit
+  -d, --debug              print debug messages
   -k, --keep-json-tracks
-                        keep all tracks until file is moved
-  -m, --map             generates a google map with all points (and draws line between them)
-  --map-zoom=MAP_ZOOM   zoom level for map
+                          keep all tracks until file is moved
+  -m, --map               generates a google map with all points (and draws line between them)
+  --map-zoom=MAP_ZOOM     zoom level for map
 ```
 
 basic usage
